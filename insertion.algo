@@ -1,0 +1,16 @@
+ALGORITHM insetion_sort
+VAR
+   arr : ARRAY_OF INTEGER [20];
+    
+BEGIN
+FOR i FROM 1 TO arr.length STEP 1 DO
+k:=i
+up:=arr[i]
+  WHILE (k>0 AND arr[k-1]>up) DO
+     arr[k]:=arr[k-1]
+     k:=k-1
+    
+  END_WHILE
+  arr[k]:=up
+END_FOR
+END
