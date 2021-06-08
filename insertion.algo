@@ -4,11 +4,11 @@ VAR
     k,i,up : INTEGER;
 BEGIN
 FOR i FROM 1 TO arr.length STEP 1 DO
-k:=i
-up:=arr[i]
+ k:=i
+ up:=arr[i]
   WHILE (k>0 AND arr[k-1]>up) DO
      arr[k]:=arr[k-1]
-     k:=k
+     k:=k-1
     
   END_WHILE
   arr[k]:=up
